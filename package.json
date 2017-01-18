@@ -1,5 +1,5 @@
 {
-  "name": "hapi-rate-limit",
+  "name": "@ethanfrogers/hapi-rate-limit",
   "version": "1.2.3",
   "description": "Rate limiting plugin for hapi",
   "main": "index.js",
