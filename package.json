@@ -26,6 +26,7 @@
   ],
   "homepage": "https://github.com/wraithgar/hapi-rate-limit#readme",
   "dependencies": {
+    "@ethanfrogers/catbox-redis": "^2.0.2",
     "boom": "^4.0.0",
     "hoek": "^4.0.1"
   },
