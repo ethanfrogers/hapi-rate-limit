@@ -31,14 +31,14 @@ server.register({
 Defaults are given here
 
 - `userLimit`: `300` number of total requests a user can make per period.  Set to `false` to disable limiting requests per user.
-- `userCache`: Object with the following properties:
-    -  `segment`: `hapi-rate-limit-user` Name of the cache segment to use for storing user rate limit info
+- `userCache`: Object with the following properties. You can also use any [Catbox Policy](https://github.com/hapijs/catbox#policy) options:
+    -  `segment`: `hapi-rate-limit-user` Name of the cache segment to pass for storing user rate limit info
     - `expiresIn`: `600000` Time (in seconds) of period for `userLimit`
 - `userAttribute`: `id` credentials attribute to use when determining distinct authenticated users
 - `userWhitelist`: `[]` array of users (as defined by `userAttribute` for whom to bypass rate limiting.  This is only applied to authenticated users, for ip whitelisting use `ipWhitelist`.
 - `addressOnly`: `false` if true, only consider user address when determining distinct authenticated users
 - `pathLimit`: `50` number of total requests that can be made on a given path per period.  Set to `false` to disable limiting requests per user.
-- `pathCache`: Object with the following properties:
+- `pathCache`: Object with the following properties. You can also pass any [Catbox Policy](https://github.com/hapijs/catbox#policy) options:
 	- `segment`: `hapi-rate-limit-path` Name of the cache segment to use for storing path rate limit info
 	- `expiresIn`: `60000` Time (in seconds) of period for `pathLimit`
 - `headers`: `true` Whether or not to include headers in responses
