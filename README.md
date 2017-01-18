@@ -72,7 +72,7 @@ The following headers will be included in server responses if their respective l
 
 ## Per-route settings
 
-All of the settings (except for `userLimit` and `userCache`) can be overridden in your route's config.
+All of the settings (except for `userCache`) can be overridden in your route's config.
 
 For instance, to disable `pathLimit` for a route you would add this to its `config` attribute
 
